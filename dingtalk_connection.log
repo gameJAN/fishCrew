@@ -1,0 +1,22 @@
+2026-03-20 17:10:37,906 - INFO - 启动钉钉流客户端
+2026-03-20 17:10:37,915 - INFO - 应用ID：dinglftkiypad1rt3xv1
+2026-03-20 17:10:37,916 - INFO - 使用凭证链接钉钉
+2026-03-20 17:10:37,916 - INFO - 钉钉客户端创建成功
+2026-03-20 17:10:37,916 - ERROR - 链接钉钉时出错:'super' object has no attribute '_EchoTextHandler__init'
+Traceback (most recent call last):
+  File "D:\private\myAgent\fishCrew\src\DingWebHook2.py", line 72, in main
+    client.register_callback_handler(ChatbotMessage.TOPIC,EchoTextHandler())
+                                                          ^^^^^^^^^^^^^^^^^
+  File "D:\private\myAgent\fishCrew\src\DingWebHook2.py", line 26, in __init__
+    super(ChatbotHandler,self).__init()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'super' object has no attribute '_EchoTextHandler__init'
+2026-03-20 17:16:23,662 - INFO - 启动钉钉流客户端
+2026-03-20 17:16:23,662 - INFO - 应用ID：dinglftkiypad1rt3xv1
+2026-03-20 17:16:23,663 - INFO - 使用凭证链接钉钉
+2026-03-20 17:16:23,663 - INFO - 钉钉客户端创建成功
+2026-03-20 17:16:23,664 - ERROR - 链接钉钉时出错:Logger.info() missing 1 required positional argument: 'msg'
+Traceback (most recent call last):
+  File "D:\private\myAgent\fishCrew\src\DingWebHook2.py", line 73, in main
+    logger.info()
+TypeError: Logger.info() missing 1 required positional argument: 'msg'
