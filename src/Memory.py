@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 import os
 
-redis_url = os.environ.get("REDIS_URL", "redis://localhost:6379/0")
+redis_url = os.environ.get("REDIS_URL", "redis://47.98.216.172:6379/0")
 print(f"Redis URL: {redis_url}")
 
 

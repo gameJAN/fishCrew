@@ -8,7 +8,7 @@ services:
     env_file:
       - .env
     environment:
-      - REDIS_URL=redis://redis:6379/0
+      - REDIS_URL=redis://47.98.216.172:6379/0
     volumes:
       - ./vector_db:/app/vector_db
       - ./logs:/app/logs

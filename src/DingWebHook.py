@@ -35,7 +35,7 @@ def setup_logging():
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
         handlers=[
             logging.StreamHandler(),
-            logging.FileHandler("dingtalk_connection.log")
+            logging.FileHandler("dingtalk_connection.log",encoding='utf-8')
         ]
     )
     return logging.getLogger("DingTalk")

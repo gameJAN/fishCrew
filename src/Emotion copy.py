@@ -1,16 +1,15 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
-from langchain_deepseek import ChatDeepSeek
 from dotenv import load_dotenv
 load_dotenv()
 import os
 
 class EmotionClass:
-    def __init__(self,model=os.getenv("BASE_MODEL")):
+
+    def __init__(self,model = os.getenv("BASE_MODEL")):
         self.chat = None
         self.Emotion = None
-        self.chatmodel = ChatDeepSeek(model=model)
-
+        self.chatmodel = ChatOpenAI(model=model)
     def Emotion_Sensing(self, input):
         # 处理输入长度
         original_input = input
