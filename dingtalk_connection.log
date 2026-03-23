@@ -20,3 +20,11 @@ Traceback (most recent call last):
   File "D:\private\myAgent\fishCrew\src\DingWebHook2.py", line 73, in main
     logger.info()
 TypeError: Logger.info() missing 1 required positional argument: 'msg'
+2026-03-20 17:18:38,180 - INFO - 启动钉钉流客户端
+2026-03-20 17:18:38,180 - INFO - 应用ID：dinglftkiypad1rt3xv1
+2026-03-20 17:18:38,180 - INFO - 使用凭证链接钉钉
+2026-03-20 17:18:38,181 - INFO - 钉钉客户端创建成功
+2026-03-20 17:18:38,181 - INFO - 已注册ChatbtMessage的回调处理
+2026-03-20 17:18:38,181 - INFO - 正在启动钉钉客户端..
+2026-03-20 17:18:38,184 - INFO - open connection, url=https://api.dingtalk.com/v1.0/gateway/connections/open
+2026-03-20 17:18:38,535 - INFO - endpoint is {'endpoint': 'wss://wss-open-connection.dingtalk.com:443/connect', 'ticket': 'c7883372-243d-11f1-a262-3a24657c5738'}
