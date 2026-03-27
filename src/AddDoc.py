@@ -22,7 +22,7 @@ class DocumentProcessor:
     
     def __init__(self, 
                  collection_name: str = os.getenv("COLLECTION_NAME", "xiaolang_documents"),
-                 embedding_model: str = os.getenv("EMBEDDING_MODEL", "Pro/BAAI/bge-m3"),
+                 embedding_model: str = os.getenv("EMBEDDING_MODEL", "text-embedding-v3"),
                  chunk_size: int = 800, 
                  chunk_overlap: int = 50,
                  persist_directory: Optional[str] = None) -> None:
@@ -74,6 +74,24 @@ class DocumentProcessor:
             embedding=self.embeddings,
         )
     
+    def __init__(self,
+                 collection_name:str = os.getenv("COLLECTION_NAME","fish_documents"),
+                 embedding_model:str = os.getenv("EMBEDDING_MODEL","text-embedding-v3"),
+                 chunk_size:int = 800,
+                 chunk_overlap:int = 50,
+                 persist_directory:Optional[str] = None
+                 ) -> None:
+        """
+        初始化文档处理器
+        
+        Args:
+            collection_name: Qdrant集合名称
+            embedding_model: OpenAI嵌入模型名称
+            chunk_size: 文档分片大小
+            chunk_overlap: 文档分片重叠大小
+            persist_directory: 永久存储目录，None则使用临时目录
+        """
+        return
     def _ensure_collection_exists(self) -> None:
         """确保Qdrant集合存在，不存在则创建"""
         try:
